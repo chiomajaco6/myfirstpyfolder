@@ -2,12 +2,12 @@
 PythonDemo
 INSTALLING PYTHON AND DJANGO
 
-•	DOWNLOAD PYTHON AT https://www.python.org/downloads/
-•	INSTALL PYTHON AND MAKE SURE YOU SELECT THE BOX  ‘ADD PYTHON TO PATH’
-•	GO TO YOUR COMMAND LINE 
-•	FROM THE CMD LINE TYPE : python --version
-•	The version of the python installed would be displayed
-•	FROM THE CMD LINE OR POWERSHELL TYPE : pip --version
+ï¿½	DOWNLOAD PYTHON AT https://www.python.org/downloads/
+ï¿½	INSTALL PYTHON AND MAKE SURE YOU SELECT THE BOX  ï¿½ADD PYTHON TO PATHï¿½
+ï¿½	GO TO YOUR COMMAND LINE 
+ï¿½	FROM THE CMD LINE TYPE : python --version
+ï¿½	The version of the python installed would be displayed
+ï¿½	FROM THE CMD LINE OR POWERSHELL TYPE : pip --version
 
 STEPS IN PYTHON WEB APP DEVELOPMENT
 You can simply used anaconda because with it there is no need for virtual environment. All you need to do is to go anaconda prompt and install Django
@@ -16,7 +16,7 @@ Steps
 1.	Open your computer
 2.	Go to the destination you want to the virtual environment to be domiciled in, preferably c:\Users\user
 3.	Create folder called mypyfolder by typing at cmd prompt, 
-c:\Users\user>mkdir mypyfolde 
+c:\Users\user>mkdir mypyfolde or you just goto Users/user and create a folder
 Open command prompt and open the folder
 4.	C:\Users\user>cd mypyfolder 
 5.	Create a virtual environment with this command, c:\Users\user\mypyfolder>py -m venv env 
@@ -38,38 +38,38 @@ In view, type this:
 
 from Django.http import HttpResponse
 def home(request):
-	return HttpResponse(‘<h1>Home Blog </h1>’)
+	return HttpResponse(ï¿½<h1>Home Blog </h1>ï¿½)
 
 example2: add more pages to your site
 in view type:
 from Django.http import HttpResponse
 def home(request):
-	return HttpResponse(‘<h1>Home Blog </h1>’)
+	return HttpResponse(ï¿½<h1>Home Blog </h1>ï¿½)
 
 def about(request):
-	return HttpResponse(‘<h1>About Blog </h1>’)
+	return HttpResponse(ï¿½<h1>About Blog </h1>ï¿½)
 
 
 
 in project url, type this: 
 from django.urls import path, include
-urlpatterns = [path(‘blog/’, include(‘blog.urls’)),]
+urlpatterns = [path(ï¿½blog/ï¿½, include(ï¿½blog.urlsï¿½)),]
 
 to add more pages, leave the first path with emty quote like below
-urlpatterns = [path(‘ ’, include(‘blog.urls’)),
+urlpatterns = [path(ï¿½ ï¿½, include(ï¿½blog.urlsï¿½)),
 ]
 	
 
 To create a good website or web app, we need to build templates
-•	Go to your app folder let’s say social
-•	Create a folder called templates
-•	Inside the template folder, create another folder called social
-•	Inside social folder, create home.html, about.html and as many pages as you want in your app
-•	Develop the contents of the pages in the template
-•	Then go to your app folder(here social), open app.py, copy the class called SocialConf
-•	Open settings.py from project folder (here futo), go to the list called INSTALLED_APP as follows
+ï¿½	Go to your app folder letï¿½s say social
+ï¿½	Create a folder called templates
+ï¿½	Inside the template folder, create another folder called social
+ï¿½	Inside social folder, create home.html, about.html and as many pages as you want in your app
+ï¿½	Develop the contents of the pages in the template
+ï¿½	Then go to your app folder(here social), open app.py, copy the class called SocialConf
+ï¿½	Open settings.py from project folder (here futo), go to the list called INSTALLED_APP as follows
 INSTALLED_APPS = [
-	‘social.apps.SocialConfig’,
+	ï¿½social.apps.SocialConfigï¿½,
 		.
 		.
 
@@ -78,8 +78,8 @@ INSTALLED_APPS = [
 another example
 in app url, u created, type this:
 from . import views
-urlpatterns = [ path(‘ ’, views.home, name = ‘blog-home’),
-	            path(‘ about’, views.about, name = ‘blog-about’),	
+urlpatterns = [ path(ï¿½ ï¿½, views.home, name = ï¿½blog-homeï¿½),
+	            path(ï¿½ aboutï¿½, views.about, name = ï¿½blog-aboutï¿½),	
 ]
 
 
