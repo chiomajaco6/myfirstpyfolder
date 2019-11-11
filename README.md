@@ -1,18 +1,21 @@
-# myfirstpyfolder
-PythonDemo
-INSTALLING PYTHON AND DJANGO
+## **myfirstpyfolder**
 
-�	DOWNLOAD PYTHON AT https://www.python.org/downloads/
-�	INSTALL PYTHON AND MAKE SURE YOU SELECT THE BOX  �ADD PYTHON TO PATH�
-�	GO TO YOUR COMMAND LINE 
-�	FROM THE CMD LINE TYPE : python --version
-�	The version of the python installed would be displayed
-�	FROM THE CMD LINE OR POWERSHELL TYPE : pip --version
+#INSTALLING PYTHON AND DJANGO
 
-STEPS IN PYTHON WEB APP DEVELOPMENT
+1.DOWNLOAD PYTHON AT https://www.python.org/downloads/
+2.INSTALL PYTHON AND MAKE SURE YOU SELECT THE BOX  �ADD PYTHON TO PATH�
+3.GO TO YOUR COMMAND LINE 
+4.FROM THE CMD LINE TYPE : python --version
+5.The version of the python installed would be displayed
+6.FROM THE CMD LINE OR POWERSHELL TYPE : pip --version
+
+#STEPS IN PYTHON WEB APP DEVELOPMENT
+<p align="justify">
 You can simply used anaconda because with it there is no need for virtual environment. All you need to do is to go anaconda prompt and install Django
+</p>
 
-Steps
+#Steps
+<p align="justify">
 1.	Open your computer
 2.	Go to the destination you want to the virtual environment to be domiciled in, preferably c:\Users\user
 3.	Create folder called mypyfolder by typing at cmd prompt, 
@@ -31,9 +34,10 @@ Install django
 13.	Continue on app development, open the command prompt
 14.	Repeat 4,and 5
 15.	(env) c:\Users\user\mypyfolder\myfirstproject>python manage.py startapp myfirstapp
+</p>
+# STEPS IN CONFIGURING YOUR DJANGO FRAMEWORK
 
-STEPS IN CONFIGURING YOUR DJANGO FRAMEWORK
-
+'code'
 In view, type this:
 
 from Django.http import HttpResponse
@@ -56,6 +60,7 @@ from django.urls import path, include
 urlpatterns = [path(�blog/�, include(�blog.urls�)),]
 
 to add more pages, leave the first path with emty quote like below
+'''
 urlpatterns = [path(� �, include(�blog.urls�)),
 ]
 	
@@ -81,7 +86,7 @@ from . import views
 urlpatterns = [ path(� �, views.home, name = �blog-home�),
 	            path(� about�, views.about, name = �blog-about�),	
 ]
-
-
+'''
+</p>
 
 
